@@ -6,7 +6,7 @@ final class SFColor {
         case blueWithHintsOfBlue = "BlueWithHintsOfBlue"
         case dark = "Dark"
         case murkyBlue = "MurkyBlue"
-        case mMutedBluishPurple = "MutedBluish-Purple"
+        case mutedBluishPurple = "MutedBluish-Purple"
         case white = "White"
     }
     func getColor(_ color: SFColor.ColorName) -> UIColor {
