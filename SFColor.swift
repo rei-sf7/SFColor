@@ -32,6 +32,7 @@ final class SFColor {
         case scarlet = "Scarlet"
         /// 白
         case white = "White"
+        case test = "test"
     }
     
     /// 指定されたカラー名に対応するUIColorを取得するメソッド
