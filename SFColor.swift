@@ -31,14 +31,17 @@ final class SFColor {
         /// スカーレット
         case scarlet = "Scarlet"
         /// 白
-        case white = "White"
+        case white2 = "White2"
         case test = "test"
     }
     
     /// 指定されたカラー名に対応するUIColorを取得するメソッド
-    /// - Parameter color: 取得したいカラーの名前
+    /// - Parameter colorName: 取得したいカラーの名前
     /// - Returns: カラーに対応するUIColor
-    func getColor(_ color: SFColor.ColorName) -> UIColor {
-        return UIColor(named: color.rawValue)!
+    func getColor(_ colorName: SFColor.ColorName) -> UIColor {
+        guard let color = UIColor(named: colorName.rawValue) else {
+            return UIColor(named: SFColor.ColorName.dark.rawValue)!
+        }
+        return color
     }
 }
